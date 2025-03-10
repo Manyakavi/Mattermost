@@ -57,7 +57,7 @@ jobs:
         run: echo "NUMBER=$(cat ${{ matrix.test.artifact }}/pr-number)" >> ${GITHUB_OUTPUT}
       - name: Publish test report
         id: report
-        uses: mikepenz/action-junit-report@992d97d6eb2e5f3de985fbf9df6a04386874114d # v5.1.0
+        uses: mikepenz/action-junit-report@97744eca465b8df9e6e33271cb155003f85327f1 # v5.5.0
         with:
           report_paths: ${{ matrix.test.artifact }}/report.xml
           check_name: ${{ matrix.test.name }} (Results)
